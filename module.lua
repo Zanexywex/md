@@ -1,12 +1,17 @@
-=
-local myModule = {}
+-- ModuleScript
 
-function myModule.sayHello(name)
-    print("Hello, " .. name .. "!")
+local module = {}
+
+function module.Hello()
+    print("✅ Hello from the module!")
 end
 
-function myModule.add(a, b)
+function module.Add(a, b)
     return a + b
 end
 
-return myModule
+function module.PrintInfo(info)
+    print("ℹ️ Info:", info)
+end
+
+return module
